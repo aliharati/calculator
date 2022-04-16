@@ -2,10 +2,10 @@ const buttons = document.querySelectorAll(".button");
 let text;
 function Calculator() {
   this.methods = {
-    "+": (a, b) => a + b,
-    "-": (a, b) => a - b,
-    "*": (a, b) => a * b,
-    "/": (a, b) => a / b,
+    "+": (a, b) => (a * 10000000 + b * 10000000) / 10000000,
+    "-": (a, b) => (a * 10000000 - b * 10000000) / 10000000,
+    "*": (a, b) => (a * 10000000 * (b * 10000000)) / 10000000,
+    "/": (a, b) => (a * 10000000) / (b * 10000000) / 10000000,
   };
   this.calculate = function (str) {
     if (str.includes("+")) {
