@@ -1,0 +1,140 @@
+body{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+#calculator {
+  width: 500px;
+  height: 500px;
+  background: rgb(3,10,59);
+  background: linear-gradient(90deg, rgba(3,10,59,1) 0%, rgba(2,45,106,1) 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  border-radius: 10px;
+  padding: 60px 20px;
+  box-shadow: 4px 5px #535353;
+}
+
+.screen {
+    font-size: 38px;
+    width: 80%;
+    height: 70px;
+    background: white; 
+    padding-left: 3px;
+    
+}
+#equationScreen {
+  font-size: 30px;
+  width: 80%;
+  height: 70px;
+  background: white; 
+  
+  
+}
+
+#buttons {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    
+}
+
+.buttonRow{
+    display: flex;
+    justify-content: space-around;
+    gap: 10px;
+    
+}
+
+.button {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 0 4px rgb(68, 67, 67);
+  cursor: pointer;
+  outline: none;
+
+}
+
+.operator {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 0 4px rgb(68, 67, 67);
+  cursor: pointer;
+  outline: none;
+
+}
+.equal {
+  height: 70px;
+  width: 70px;
+  background-color: white;
+  border-radius: 50%;
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
+  box-shadow: 0 4px rgb(68, 67, 67);
+  cursor: pointer;
+  outline: none;
+
+}
+#deleteButton {
+  height: 70px;
+  width: 160px;
+  background-color: white;
+  border-radius: 10px;
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  box-shadow: 0 5px rgb(68, 67, 67);
+  cursor: pointer;
+  outline: none;
+
+}
+#clearButton {
+  height: 70px;
+  width: 160px;
+  background-color: white;
+  border-radius: 10px;
+  border: 0;
+  font-size: 30px;
+  font-weight: 900;
+  margin-bottom: 10px;
+  box-shadow: 0 5px rgb(68, 67, 67);
+  cursor: pointer;
+  outline: none;
+
+}
+.push:hover {background-color: #ffffff}
+
+.push:active {
+  background-color: #d0d1d0;
+  box-shadow: 0 1px rgb(68, 67, 67);
+  transform: translateY(4px);
+}
+
+
+
+#deleteButton:active {
+  background-color: #d0d1d0;
+  box-shadow: 0 1px rgb(68, 67, 67);
+  transform: translateY(4px);
+}
+#clearButton:active {
+  background-color: #d0d1d0;
+  box-shadow: 0 1px rgb(68, 67, 67);
+  transform: translateY(4px);
+}
